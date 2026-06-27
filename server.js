@@ -23,6 +23,7 @@ const ALLOWED_ORIGINS = [
   "http://localhost:5173",
   "http://localhost:3000",
   "http://127.0.0.1:5173",
+  "https://smarthome-frontend.pages.dev",
   process.env.FRONTEND_URL,          // e.g. https://roomrentkh.vercel.app
 ].filter(Boolean);
 
@@ -86,6 +87,7 @@ app.use((err, _req, res, _next) => {
   });
 });
 
+// ── Start ─────────────────────────────────────────────────────────────────────
 // ── Start ─────────────────────────────────────────────────────────────────────
 const PORT = process.env.PORT || 5000;
 app.listen(PORT,'0.0.0.0', () => {
