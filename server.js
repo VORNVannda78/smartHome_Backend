@@ -88,7 +88,7 @@ app.use((err, _req, res, _next) => {
 
 // ── Start ─────────────────────────────────────────────────────────────────────
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen(PORT,'0.0.0.0', () => {
   console.log(`\n🚀  RoomRentKH API  →  http://localhost:${PORT}`);
   console.log(`🌍  Env             →  ${process.env.NODE_ENV || "development"}`);
   console.log(`✅  Health check    →  http://localhost:${PORT}/api/health\n`);
